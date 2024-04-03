@@ -1,15 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="short icon"
+      href="../icon/Hydrattz-Multipurpose-Alphabet-Letter-G-blue.ico"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link href="./output.css" rel="stylesheet" />
+    <title>Greaves Electric Mobility</title>
   </head>
-  <body>
-    <h1
-      class="text-3xl font-bold underline bg-red-500 text-white text-center py-4"
-    >
-      Hello world!
-    </h1>
+  <body class="m-0 p-0">
+    <!-- navbar -->
+    <section class="bg-[rgba(0,0,0,0.9)]">
+      <nav class="container mx-auto">
+        <div class="px-4 flex items-center justify-between lg:px-20">
+          <div class="p-2 lg:p-5">
+            <img
+              src="../img/icon.png"
+              alt="Greaves Electric Mobility"
+              class="w-36 h-16"
+            />
+          </div>
+          <div class="my-auto">
+            <button class="lg:hidden text-white" onclick="menubar()">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <ul
+            class="hidden lg:flex text-white items-center justify-center gap-x-16"
+          >
+            <li class="hover:border-b-2 border-gray-100">
+              <a href="#">Home</a>
+            </li>
+            <li class="hover:border-b-2 border-gray-100">
+              <a href="#about">About</a>
+            </li>
+            <li class="hover:border-b-2 border-gray-100">
+              <a href="#produts">Produts</a>
+            </li>
+            <li class="hover:border-b-2 border-gray-100">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hidden" id="menu">
+          <ul
+            class="flex flex-col items-center my-2 gap-y-4 justify-center text-center text-white"
+          >
+            <li class="hover:border-b-2 border-gray-100">
+              <a href="#">Home</a>
+            </li>
+            <li class="hover:border-b-2 border-gray-100">
+              <a href="#about">About</a>
+            </li>
+            <li class="hover:border-b-2 border-gray-100">
+              <a href="#produts">Produts</a>
+            </li>
+            <li class="hover:border-b-2 border-gray-100">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="flex flex-col text-center items-center justify-center pt-8 lg:pt-56">
+        <h1 class="text-neutral-200 font-bold text-xl md:text-3xl lg:text-8xl">
+          TRUST OF <span class="text-sky-500">GREAVES </span>
+        </h1>
+        <h1 class="text-white text-xl md:text-3xl lg:text-8xl font-bold">
+          TRUSTED By <span class="text-sky-500">INDIA</span>
+        </h1>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
